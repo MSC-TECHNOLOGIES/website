@@ -99,6 +99,7 @@ nav a:hover {
 }
 
 .about {
+  max-width: 800px;
   min-height: 100vh;
   color: #333;
   display: flex;
@@ -268,79 +269,105 @@ footer {
   padding: 10px;
 }
 
-/* Default (Desktop-first styles already written) */
 
-
-/* Mobile (≤ 768px) */
+/* Tablets and small desktops (≤ 768px) */
 @media (max-width: 768px) {
-  header nav a {
-    display: block;   /* Stack menu links */
-    margin: 10px 0;
+  nav {
+    gap: 10px;
   }
-  .hero {
-    padding: 40px 20px;
+
+  nav a {
+    display: block;
+    margin: 5px 0;
   }
-  .hero h2 {
-    font-size: 1.8em;
+
+  .about h2,
+  .courses h2,
+  .testimonials h2,
+  .contact h2 {
+      font-size: 1.5rem;
+    }
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
   }
-  .courses h2 {
-    font-size: 1.8em;
+
+  .course {
+    width: 80%; /* take most of the width */
+    max-width: 300px;
   }
-  .courses div {
-    flex-direction: column; /* Stack courses */
+
+  .testimonial-container {
+    flex-direction: column;
     align-items: center;
   }
-  .about h2 {
-    font-size: 2em;
-  }
-  .about ul {
-    font-size: 1em;
-  }
 
-.testimonials h2 {
-  font-size: 1.8em;
-}
-  .testimonial {
-    max-width: 75%; /* Wider testimonials on small screens */
-  }
-  .contact {
-    flex-direction: column; /* Stack contact details */
+  .details div {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1rem;
   }
 }
 
-/* Small Mobile (≤ 480px) */
-@media (max-width: 480px) {
-  header nav a {
-    display: block;   /* Stack menu links */
-    margin: 10px 0;
+/* Phones (≤ 600px) */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6rem;
   }
+
+  nav {
+    font-size: 0.9rem;
+  }
+
   .hero {
-    padding: 40px 20px;
-  }
-  .hero h2 {
-    font-size: 1.8em;
-  }
-  .courses h2 {
-    font-size: 1.8em;
-  }
-  .courses div {
-    flex-direction: column; /* Stack courses */
-    align-items: center;
-  }
-  .about h2 {
-    font-size: 1.8em;
-  }
-  .about ul {
-    font-size: 0.875em;
+    padding: 40px 15px;
+    text-align: center;
   }
 
-.testimonials h2 {
-  font-size: 1.8em;
-}
-  .testimonial {
-    max-width: 90%; /* Wider testimonials on small screens */
+  .hero-content h1 {
+    font-size: 2rem;
   }
+
+  .hero-content p {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  .about {
+    padding: 15px;
+  }
+
+  .about ul {
+    min-width: auto;       /* ✅ remove the fixed 600px */
+    width: 100%;           /* fit to screen */
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .courses h2,
+  .testimonials h2,
+  .contact h2 {
+    font-size: 1.6em;
+  }
+
+  .course {
+    width: 100%;           /* take full width */
+    max-width: none;
+  }
+
+  .testimonial {
+    max-width: 90%;
+  }
+
   .contact {
-    flex-direction: column; /* Stack contact details */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .details div {
+    font-size: 1rem;
   }
 }
