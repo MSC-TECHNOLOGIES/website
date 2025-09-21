@@ -72,6 +72,7 @@ nav a:hover {
 
 .hero-content {
   max-width: 1000px;
+  margin : 30px auto;
 }
 
 .hero-content h1 {
@@ -372,6 +373,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 
 
 
