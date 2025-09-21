@@ -281,6 +281,9 @@ footer {
     margin: 5px 0;
   }
 
+  .hero {
+    margin-top: 40px;
+  }
   .about h2,
   .courses h2,
   .testimonials h2,
