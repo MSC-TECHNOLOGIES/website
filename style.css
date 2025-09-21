@@ -67,7 +67,6 @@ nav a:hover {
   display: flex;
   align-items: center;
   color: white;
-  margin-top: 40px;
 }
 
 .hero-content {
@@ -86,6 +85,7 @@ nav a:hover {
   letter-spacing: 0.04cm;
   margin-bottom: 60px;
   color: #31C950;
+  font-weight:600;
 }
 
 .hero-content .btn {
@@ -374,6 +374,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 
 
 
