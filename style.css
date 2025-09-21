@@ -135,7 +135,6 @@ nav a:hover {
 
 .about ul li::before {
   content: "➜";
-  /* Arrow symbol */
   position: absolute;
   left: 0;
   color: #004080;
@@ -270,7 +269,6 @@ footer {
 }
 
 
-/* Tablets and small desktops (≤ 768px) */
 @media (max-width: 768px) {
   nav {
     gap: 10px;
@@ -297,7 +295,7 @@ footer {
   }
 
   .course {
-    width: 80%; /* take most of the width */
+    width: 80%;
     max-width: 300px;
   }
 
@@ -313,7 +311,6 @@ footer {
   }
 }
 
-/* Phones (≤ 600px) */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.6rem;
@@ -342,8 +339,8 @@ footer {
   }
 
   .about ul {
-    min-width: auto;       /* ✅ remove the fixed 600px */
-    width: 100%;           /* fit to screen */
+    min-width: auto;
+    width: 100%;
     font-size: 1rem;
     text-align: left;
   }
@@ -355,7 +352,7 @@ footer {
   }
 
   .course {
-    width: 100%;           /* take full width */
+    width: 100%;
     max-width: none;
   }
 
