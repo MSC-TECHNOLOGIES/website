@@ -77,14 +77,15 @@ nav a:hover {
 
 .hero-content h1 {
   color: #FF2056;
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 20px;
 }
 
 .hero-content p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   letter-spacing: 0.04cm;
   margin-bottom: 60px;
+  color: #31C950;
 }
 
 .hero-content .btn {
@@ -373,6 +374,7 @@ footer {
     font-size: 1rem;
   }
 }
+
 
 
 
