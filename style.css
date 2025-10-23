@@ -223,7 +223,7 @@ nav a:hover {
   padding: 40px;
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 40px;
   scroll-margin-top: 10rem;
 }
 
@@ -241,6 +241,7 @@ nav a:hover {
 }
 
 .details div {
+  max-width: 760px;
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -248,14 +249,21 @@ nav a:hover {
   font-size: 1.25rem;
 }
 
+.manual-address {
+  margin-top: 10px;
+  font-size: 10px;
+  font-size: 0.5rem;
+  color: black;
+}
+
 .d-icon {
   margin-right: 14px;
-  color: #0b65be;
+  color: #f8174f;
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.details div a {
+.details a {
   color: black;
   text-decoration: none;
 }
