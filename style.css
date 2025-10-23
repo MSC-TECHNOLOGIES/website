@@ -288,9 +288,16 @@ footer {
   .hero {
     margin-top: 40px;
   }
+
+  .hero-content h1 {
+    color: #f8174f;
+  }
   .about h2,
   .courses h2,
   .testimonials h2,
+  .hero-content h1 {
+    color: #FF2056;
+  }
   .contact h2 {
       font-size: 1.5rem;
     }
